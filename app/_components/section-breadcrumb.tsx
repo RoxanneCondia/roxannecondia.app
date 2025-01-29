@@ -1,15 +1,12 @@
 "use client";
-import React from "react";
-import { usePathname } from "next/navigation";
-import { Config } from "@/lib/data";
 import {
   Breadcrumb,
-  BreadcrumbList,
   BreadcrumbItem,
-  BreadcrumbPage,
-  BreadcrumbSeparator,
   BreadcrumbLink,
+  BreadcrumbList,
+  BreadcrumbPage
 } from "@/components/ui/breadcrumb";
+import { usePathname } from "next/navigation";
 
 function BreadCrumb() {
   const pathname = usePathname();
@@ -34,19 +31,6 @@ function BreadCrumb() {
             ) : (
               <BreadcrumbLink href="/#list">Experience</BreadcrumbLink>
             )}
-          </BreadcrumbItem>
-          <BreadcrumbSeparator />
-          <BreadcrumbItem className="relative">
-            {pathname === "/projects" ? (
-              <div className="flex items-center">
-                <BreadcrumbPage>Projects</BreadcrumbPage>
-              </div>
-            ) : (
-              <BreadcrumbLink href="/projects#list">
-                <div className="flex items-center">Projects</div>
-              </BreadcrumbLink>
-            )}
-            <Badge count={Config.Projects.length} />
           </BreadcrumbItem>
         </BreadcrumbList>
       </Breadcrumb>

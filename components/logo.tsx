@@ -1,6 +1,5 @@
 "use client";
 import { motion } from "framer-motion";
-import React from "react";
 import Image from "next/image";
 
 function Logo() {
@@ -13,7 +12,7 @@ function Logo() {
       }}
     >
       <Image
-        src="https://avatars.githubusercontent.com/u/41871666?v=4&height=14&width=14"
+        src="https://avatars.githubusercontent.com/u/196952498?v=4"
         alt={"Paul Gomez Avatar"}
         width="0"
         height="0"

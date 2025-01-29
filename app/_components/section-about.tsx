@@ -1,30 +1,31 @@
 import { Config } from "@/lib/data";
 import { getYearsOfExperience } from "@/lib/utils";
-import React from "react";
 
 function About() {
   return (
     <section className="flex flex-col gap-4">
       <h3 className="text-sm">About</h3>{" "}
       <p className="font-light text-sm dark:text-zinc-500 text-primary/80 text-justify">
-        Hello, I'm Paul, an experienced{" "}
+        Hello, I'm Roxanne, an experienced{" "}
         <span className="dark:text-white  text-primary font-medium">
-          Full Stack Engineer
+          HR Generalist
         </span>{" "}
-        immersed in software and web development. My passion lies in crafting
-        open-source applications, solutions and tools, while collaborating with
-        different developers around the world.
-      </p>
+        with a strong background in HR operations, client relations, and administrative support. With over {getYearsOfExperience(Config.yearStart)} years of experience
+        , I specialize in employee relations, compensation & benefits, HRIS management, and HMO administration.</p>
       <p className="font-light text-sm dark:text-zinc-500  text-primary/80  text-justify">
         I'm currently in the{" "}
         <span className="dark:text-white  text-primary font-medium">
           Philippines
         </span>
-        , working remotely in projects involving Next.js, React, C#, Python, Expo and React Native, with over {getYearsOfExperience(Config.yearStart)} years of experience, I've worked closely with
-        companies locally and remotely with different teams worldwide.
+        , I have worked primarily with tech companies, managing day-to-day HR operations, onboarding, event organization, and benefits administration. I take pride in creating efficient systems that not only enhance productivity but also contribute to employee satisfaction and engagement.
       </p>
     </section>
   );
 }
 
 export default About;
+
+
+
+
+

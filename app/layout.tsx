@@ -1,23 +1,20 @@
-import "./globals.css";
-import type { Metadata } from "next";
-import { GeistSans } from "geist/font/sans";
-import { GeistMono } from "geist/font/mono";
 import { Toaster } from "@/components/ui/toaster";
 import Provider from "@/lib/provider";
-import { Link, ViewTransitions } from "next-view-transitions";
-import TextHeader from "./_components/section-text-header";
+import { GeistMono } from "geist/font/mono";
+import { GeistSans } from "geist/font/sans";
+import type { Metadata } from "next";
+import { ViewTransitions } from "next-view-transitions";
 import About from "./_components/section-about";
 import AvatarSocials from "./_components/section-avatar-socials";
-import Skills from "./_components/section-skills";
 import BreadCrumb from "./_components/section-breadcrumb";
-import { headers } from "next/headers";
+import Skills from "./_components/section-skills";
+import TextHeader from "./_components/section-text-header";
+import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Paul Gomez",
-  description:
-    "Hello, I'm Paul, an experience Full Stack Engineer specialzing in web development with NextJS and TypeScript. I tinker around making tools for other various fields like Image Optimization, Syntax Analysis and Highlighting and Task Automation and Testing.",
+  title: "Roxanne Condia",
   icons: {
-    icon: "/favicon.ico",
+    icon: "https://avatars.githubusercontent.com/u/196952498?v=4",
   },
 };
 
@@ -34,7 +31,7 @@ export default function RootLayout({
         >
           <Provider>
             <div
-              className="container md:max-w-[50rem]
+              className="container md:max-w-[40rem]
  w-full mx-auto max-w-none antialiased mb-10"
             >
               <div className="md:p-0 p-8 pt-4 md:pt-0 space-y-5">
