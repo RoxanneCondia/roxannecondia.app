@@ -17,7 +17,9 @@ function About() {
         <span className="dark:text-white  text-primary font-medium">
           Philippines
         </span>
-        , I have worked primarily with tech companies, managing day-to-day HR operations, onboarding, event organization, and benefits administration. I take pride in creating efficient systems that not only enhance productivity but also contribute to employee satisfaction and engagement.
+        , I have worked primarily with tech companies, managing day-to-day HR operations,
+        onboarding, event organization, and benefits administration.
+        I take pride in creating efficient systems that not only enhance productivity but also contribute to employee satisfaction and engagement.
       </p>
     </section>
   );
